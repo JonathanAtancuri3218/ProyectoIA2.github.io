@@ -1,0 +1,43 @@
+
+#menuPrincipal{
+    width: 20%;
+    background-color:green;
+    border-width: 10px;
+    border-color:#adff2f;
+    border-style: solid;
+    float: left;
+
+}
+.imagen {
+    width: 350px ;
+    height: 250px;
+}
+
+#contenido{
+    width: 65%;
+    background-color:aqua;
+    margin-left:10px;
+    padding:5px 20px;
+    border-width:20px;
+    border-color:salmon;
+    border-style: solid;
+
+    background-image: url("img1.jpg");
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+
+    float: right;
+
+}
+#final{
+    width: 20%;
+
+    border :20px grey  solid;
+    background-image: url("logo1.jpg");
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    float: left;
+}
+body{
+    background-image:url("img1.jpg");
+}

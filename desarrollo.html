@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!--
+    General Information about Curbside Thai
+    Author: Carlos Andrade
+    Date: 5/04/2019
+    Filename: ct_about.html
+    -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Desarrollo</title>
+<link href="css/2columnas.css" rel="stylesheet"  />
+<link href="css/estilomenu.css" rel="stylesheet" />
+<link href="css/texto.css" rel="stylesheet"  />
+</head>
+
+<body>
+
+	<header class="logo">
+		<h1> TÍTULO PRÁCTICA: Proyecto Integrador – Implementación de un sistema de visión artificial para binarización por umbral en base a videos a color  </h1>
+	</header>
+	<div id="final">
+		<footer>
+
+			<A id="inicio"></A><h2> 1.	Revisar el contenido teórico del tema</h2>
+			<A id="inicio"></A><h2> 2. Profundizar los conocimientos revisando los libros guías, los enlaces contenidos en los objetos de aprendizaje y la documentación disponible en fuentes académicas en línea</h2>
+			<A id="inicio"></A><h2> 3. Deberá desarrollar un programa organizado en capas (programación 2 o 3 capas) que permita realizar detectar una persona en movimiento, eliminar los pixeles alrededor de la misma y sobreponerla sobre un vídeo guardado en disco.</h2>
+			<A id="inicio"></A><h2> 4. Deberá generar un informe empleando una herramienta Web 2.0 y un vídeo-blog en inglés explicando los principales aspectos de la propuesta planteada para realizar la binarización por umbral y la extracción de los pixeles de interés.</h2>
+
+		</footer>
+	</div>
+		<nav class="navegacion">
+			<ul class="menu">
+
+				<li class="first-item">
+					<a href="index.html">
+						<img src="images/m1.jpg" alt="" class="imagen">
+						<span class="text-item">Inicio</span>
+						<span class="down-item"></span>
+					</a>
+				</li>
+
+				<li>
+					<a href="equipo_de_proteccion.html">
+						<img src="images/m2.jpg" alt="" class="imagen">
+						<span class="text-item">Desarrollo</span>
+						<span class="down-item"></span>
+					</a>
+				</li>
+
+
+
+			</ul>
+		</nav>
+
+
+
+		<div id="contenido">
+
+			<section>
+				<h2> </h2>
+				<h3>Binarizacion</h3>
+
+				<p>
+					La binarización de una imagen digital consiste en convertir la imagen digital en una imagen en blanco y negro, de tal manera que se preserven las propiedades esenciales de la imagen. Uno de los métodos para poder binarizar una imagen digital es mediante el histograma de dicha imagen.
+				</p>
+				<img alt="logo" src="images/mbi.png" width="425" height="222" />
+				<aside>
+					<h3> ¿QUÉ ES UMBRALIZACIÓN?</h3>
+					<p>
+						Es el método más simple de segmentación.
+						Ejemplo de aplicación: Separar regiones de una imagen correspondientes a los objetos que queremos analizar. Esta separación se basa en la variación de la intensidad entre los píxeles de objetos y los píxeles de fondo.
+					</p>
+				</aside>
+			</section>
+
+
+			<section>
+				<h3> TIPOS DE UMBRALIZACIÓN </h3>
+
+				<p>
+					OpenCV ofrece la función threshold para mejorar las operaciones de umbralización.
+					Podemos efectuar  tipos de operaciones de umbralización con esta función. los cuales se an empleado en el desarrollo del proyecto
+				</p>
+				<img alt="logo" src="images/mbi2.png" width="425" height="222" />
+
+				<h3> Desarrollo </h3>
+
+				<p>
+					Cargamos los videos a procesar. el uno descargado y el otro obtenido de la camara de nuestra computadora, creamos las ventanas que vamos a usar para mostras los resultados.
+				</p>
+
+				<img alt="DESARROLLO" src="images/i1.jpg" width="425" height="222" />
+
+				<p>
+					verificamos que los videos que vamos a usar se encuentre disponibles para poder usar. y mandamos a hacer el procesamiento dentro de la capa Procesamiento.cpp
+				</p>
+
+				<img alt="DESARROLLO" src="images/i2.jpg" width="425" height="222" />
+
+				<h3> THRESH_BINARY </h3>
+
+				<img alt="DESARROLLO" src="images/i3.png" width="222" height="111" />
+				<p>
+					para el procesamiento usamos THRESH_BINARY El valor máximo de intensidad de los píxeles es THRESH, si SRC(x,y) es mayor, entonces su valor se trunca . Véase la figura a continuación
+				</p>
+				<img alt="DESARROLLO" src="images/i4.png" width="425" height="222" />
+
+				<p>
+					obteniendo el siguiente resultado. donde podemos también ver que se hace una inversión en los colores para poder usar la zona negra para poder remplazar con el video.
+				</p>
+				<img alt="DESARROLLO" src="images/i5.jpg" width="425" height="222" />
+
+				<p>
+					una vez que obtenemos el video ya preparado para poder hacer la unión de los dos videos eliminando la zona de color negro la cual se remplazara con la zona respectiva en el video que se usara de fondo.
+				</p>
+				<img alt="DESARROLLO" src="images/i6.jpg" width="425" height="222" />
+				<p>
+					tambien se empleo la funcion gaussiana para hacer un suabisado al video resultante mejorando asi la salida.
+				</p>
+				<img alt="DESARROLLO" src="images/i7.jpg" width="800" height="350" />
+
+
+				<!--
+	   <iframe width="560" height="315" src="https://www.youtube.com/embed/wWfG0NnkPwo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	-->
+			</section>
+			</div>
+			<div id="final">
+				<footer>
+
+					<br>Nombre: Carlos Andrade
+					<br>Organizacion: UPS
+					<br> Correo:
+					<a href="mailto:candradev3@est.ups.edu.ec">
+						candradev3@est.ups.edu.ec
+					</a>
+					<br>telefono:<a href="tel:+13174562564">317-4177-3306</a>
+					<br> <img alt="logo" src="images/copyright.png" width="16" height="8" /> Todos los derechos reservados
+
+
+
+				</footer>
+
+			</div>
+
+
+	</body>
+	</html>
